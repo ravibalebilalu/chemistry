@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>table view</title>
+    <link rel="stylesheet" href="{% static 'table.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h1 class="heading">Periodic Table</h1>
+    
+      <div class="row two">
+       {% for el in substance%}
+       {% if el.atomic_number <= 2 %}
+        
+       <div 
+        class="eliment {{el.element|lower}}" >
+        <span > <h3 class="row1"> {{ el.symbol}} </h3></span>
+        <span >{{ el.element}}</span>
+        <span>{{ el.atomic_number}}</span>
+       </div>
+
+
+
+       {% elif el.atomic_number > 2 and el.atomic_number < 11 %}
+      
+       <div class="eliment {{el.element|lower}}">
+        <span><h3 class="row2">{{ el.symbol}} </h3></span>
+        <span>{{ el.element}}</span>
+        <span>{{ el.atomic_number}}</span>
+        </div>
+
+
+       
+       {% elif el.atomic_number > 10 and el.atomic_number < 19 %}
+        
+
+       <div class="eliment {{el.element|lower}}"  >
+        <span><h3 class="row3">{{ el.symbol}} </h3></span>
+        <span>{{ el.element}}</span>
+        <span>{{ el.atomic_number}}</span>
+        
+       </div>
+        
+
+
+       {% elif el.atomic_number > 18 and el.atomic_number < 37 %}
+
+       <div class="eliment {{el.element|lower}}">
+        <span><h3 class="row4">{{ el.symbol}} </h3></span>
+        <span>{{ el.element}}</span>
+        <span>{{ el.atomic_number}}</span>
+        
+       </div>
+
+       {% elif el.atomic_number > 36 and el.atomic_number < 55 %}
+
+       <div class="eliment {{el.element|lower}}">
+        <span><h3 class="row5">{{ el.symbol}} </h3></span>
+        <span>{{ el.element}}</span>
+        <span>{{ el.atomic_number}}</span>
+        
+       </div>
+
+       {% elif el.atomic_number > 54  and el.atomic_number < 57 or  el.atomic_number > 71 and el.atomic_number < 87  %}
+       
+       <div class="eliment {{el.element|lower}}">
+        <span><h3 class="row6">{{ el.symbol}} </h3></span>
+        <span>{{ el.element}}</span>
+        <span>{{ el.atomic_number}}</span>
+        
+       </div>
+      
+
+       {% elif el.atomic_number > 86  and el.atomic_number < 89 or  el.atomic_number > 103 and el.atomic_number < 119 %}
+       
+       <div class="eliment {{el.element|lower}}">
+        <span><h3 class="row7">{{ el.symbol}} </h3></span>
+        <span>{{ el.element}}</span>
+        <span>{{ el.atomic_number}}</span>
+        
+       </div>
+
+         
+        {% endif %}
+       {% endfor %}
+    
+    </div>
+
+<br><br>
+
+    <div class="bottom1 two">
+      {% for el in substance%}
+
+      {% if el.atomic_number > 56  and el.atomic_number < 72 %}
+       
+       <div class="bottom_eliments {{el.element|lower}}">
+        <span><h3 class="row8">{{ el.symbol}} </h3></span>
+        <span>{{ el.element}}</span>
+        <span>{{ el.atomic_number}}</span>
+        
+       </div>
+       
+       {% endif %}
+       {% endfor %}
+    </div>
+
+
+       <div class="bottom2 two">
+       {% for el in substance%}
+
+
+       {% if el.atomic_number > 88  and el.atomic_number < 104 %}
+        
+        <div class="bottom_eliments_last {{el.element|lower}}">
+         <span><h3 class="row9">{{ el.symbol}} </h3></span>
+         <span>{{ el.element}}</span>
+         <span>{{ el.atomic_number}}</span>
+         
+        </div>
+        
+ 
+    
+
+       {% endif %}
+       {% endfor %}
+    </div>       
+    
+</body>
+</html>

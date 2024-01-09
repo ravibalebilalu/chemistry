@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>details</title>
+        <link rel="stylesheet" href="{% static 'details.css' %}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        </head>
+        <body>
+
+
+   
+<div class="el_nu_sy">
+    <h1 class="element">{{substance.element}}</h1>
+
+   <h3 class="atomic_number">Atomic Number : {{substance.atomic_number}}</h3>
+    
+   <h1 class="symbo">  {{substance.symbol}}</h1>
+
+   <h3>Phase : {{substance.phase}}</h3>
+
+   <h3>Type : {{substance.types}}</h3>
+</div>
+
+
+ 
+   <div class="atomic_structure">
+    <span class="center">Al</span>
+
+   </div>
+ 
+
+
+
+
+   <h3>Atomic Mass : {{substance.atomic_mass}}</h3>
+   <h3>Number Of Neutrons : {{substance.number_of_neutrons}}</h3>
+   <h3>Number Of Protons : {{substance.number_of_protons}}</h3>
+   <h3>Number of Electrons : {{substance.number_of_electrons}}</h3>
+   <h3>Periods : {{substance.period}}</h3>
+   <h3>Group : {{substance.group}}</h3>
+   
+   <h3>Is Radioactive : {{substance.radioactive}}</h3>
+   <h3>Is natural : {{substance.natural}}</h3>
+   <h3>Is Metal : {{substance.metal}}</h3>
+   <h3>Is Metalloid : {{substance.metalloid}}</h3>
+   
+   <h3>Atomic Radius : {{substance.atomic_radius}}</h3>
+   <h3>Electronegativity : {{substance.electronegativity}}</h3>
+   <h3>First Ionization : {{ substance.first_ionization}}</h3>
+   <h3>Density : {{substance.density}}</h3>
+   <h3>Melting Point : {{substance.melting_point}}</h3>
+   <h3>Boiling Point : {{substance.boiling_point}}</h3>
+   <h3>Number of Isotopes : {{substance.number_of_isotopes}}</h3>
+   <h3>Who discovered : {{substance.discoverer}}</h3>
+   <h3>Year : {{substance.year}}</h3> 
+   <h3>Specific heat : {{substance.specific_heat}}</h3>
+   <h3>Number Of Shell : {{substance.number_of_shells}}</h3>
+   <h3>Number of Valence : {{substance.number_of_valence}}</h3>
+        </body>
+    </head>
+</html>

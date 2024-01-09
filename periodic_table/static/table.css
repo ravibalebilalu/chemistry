@@ -1,0 +1,168 @@
+ body{
+   background-color:black;
+ }
+ .heading {
+    text-align: center;
+    color:  lightskyblue;
+    
+ }
+
+ span {
+    font-weight: bold;
+    color: antiquewhite;
+
+ }
+
+ .row {
+    display: grid;
+    grid-template-columns: repeat(18, 100px);
+    gap: 1px;
+    ;
+
+ }
+
+ .bottom1 {
+    display: grid;
+    grid-template-columns: repeat(18, 100px);
+    gap: 1px;
+
+
+
+ }
+
+ .bottom2 {
+    display: grid;
+    grid-template-columns: repeat(18, 100px);
+    gap: 1px;
+
+
+ }
+
+ .bottom_eliments_last {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    text-align: center;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+
+ }
+
+ .eliment {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    text-align: center;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+
+ }
+
+ .bottom_eliments {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    text-align: center;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+ }
+  
+
+ .hydrogen {
+    grid-column: 1;
+     
+ }
+
+ .helium {
+    grid-column: 18;
+ }
+
+
+
+ .corbon {
+    grid-column: 14;
+ }
+
+ .boron {
+    grid-column: 13;
+ }
+
+ .aluminum {
+    grid-column: 13;
+ }
+
+ .hafnium {
+    grid-column: 4;
+ }
+
+ .rutherfordium {
+    grid-column: 4;
+ }
+
+ .lanthanum {
+    grid-column: 2;
+ }
+
+ .actinium {
+    grid-column: 2;
+ }
+
+
+ .eliment span,
+ .bottom_eliments span,
+ .bottom_eliments_last span {
+    font-size: 0.8em;
+    /* Adjust the font size as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ }
+
+
+ .row1{
+   color:blue;
+}
+
+.row2{
+   color:coral;
+}
+
+.row3{
+   color: white;
+}
+
+.row4{
+   color: orange;
+}
+.row5{
+   color: darkgreen;
+}
+
+.row6{
+   color: darkgrey;
+}
+
+.row7{
+   color: yellow;
+}
+
+.row8{
+   color: cyan;
+}
+
+.row9{
+   color: red;
+}
