@@ -1,15 +1,18 @@
  body{
+   
    background-color:gray;
- }
- .heading_cont{
     
-    color:  black;
-    height: 100px;;
-    width: 700px%;
-    border: 2px solid red;
-    text-align: center;
+   margin: 20px;
 
+     
  }
+
+.heading{
+    color: aliceblue;
+    text-align: center;
+    font-weight: bolder;
+}
+ 
  
  span {
     font-weight: bold;
@@ -27,7 +30,7 @@
     display: grid;
     grid-template-columns: repeat(18, 100px);
     gap: 1px;
-    ;
+    
 
  }
 
