@@ -18,46 +18,55 @@
     
    <h1 class="symbo">  {{substance.symbol}}</h1>
 
-   <h3>Phase : {{substance.phase}}</h3>
-
-   <h3>Type : {{substance.types}}</h3>
+   
 </div>
+<br>
 
+<div class="discription" >
+    <h3 >🟢
+        {{substance.element}}({{substance.symbol}}) is a {{substance.phase}}
+        with atomic number {{substance.atomic_number}}. It has {{substance.number_of_protons}} protons,
+         {{substance.number_of_electrons}} electrons, and {{substance.number_of_neutrons}} neutrons
+         in its nucleus, belonging to Group {{substance.group}} and Period {{substance.period}} of 
+         the periodic table. It has {{substance.number_of_isotopes}} isotopes.</h3>
+        
+         {%  if substance.natural %}
+         <h3>🟢 {{substance.element}} is a natural occurrence</h3>
+         {% endif %}
+
+         {%  if substance.radioactive %}
+         <h3>🟢 {{ substance.element}} is a radioactive element.</h3>
+         {% else %}
+         <h3>🟢 {{ substance.element}} is a non-radioactive element.</h3>
+         {% endif %}
+
+
+         {%  if substance.metal %}
+         <h3>🟢 {{ substance.element}} is a metal  with an atomic mass of 
+          {{substance.atomic_mass}}, an atomic radius of {{substance.atomic_radius}},
+          and an electronegativity of {{substance.electronegativity}}.</h3>
+         {% else %}
+         <h3>🟢 {{ substance.element}} is a non-metal with an atomic mass of 
+          {{substance.atomic_mass}}, an atomic radius of {{substance.atomic_radius}},
+          and an electronegativity of {{substance.electronegativity}}.</h3>
+         {% endif %}
+
+         {% if substance.discoverer and substance.year %}
+         <h3> 🟢 {{substance.element}} was  discovered by {{substance.discoverer}} in {{substance.year}}</h3>
+         {% endif %}
+
+
+<h3>🟢 It has a melting point of {{substance.melting_point}}°C, boiling point of {{substance.boiling_point}}°C,
+density of {{substance.density}}, specific heat of {{substance.specific_heat}}, and exists in a  {{substance.phase}} phase 
+at room temperature. It has {{substance.number_of_shells}} electron shells and {{substance.number_of_electrons}} valence electron(s).
+
+    </h3>
+    </div>
 
  
-   <div class="atomic_structure">
-    <span class="center">Al</span>
-
-   </div>
- 
-
-
-
-
-   <h3>Atomic Mass : {{substance.atomic_mass}}</h3>
-   <h3>Number Of Neutrons : {{substance.number_of_neutrons}}</h3>
-   <h3>Number Of Protons : {{substance.number_of_protons}}</h3>
-   <h3>Number of Electrons : {{substance.number_of_electrons}}</h3>
-   <h3>Periods : {{substance.period}}</h3>
-   <h3>Group : {{substance.group}}</h3>
    
-   <h3>Is Radioactive : {{substance.radioactive}}</h3>
-   <h3>Is natural : {{substance.natural}}</h3>
-   <h3>Is Metal : {{substance.metal}}</h3>
-   <h3>Is Metalloid : {{substance.metalloid}}</h3>
-   
-   <h3>Atomic Radius : {{substance.atomic_radius}}</h3>
-   <h3>Electronegativity : {{substance.electronegativity}}</h3>
-   <h3>First Ionization : {{ substance.first_ionization}}</h3>
-   <h3>Density : {{substance.density}}</h3>
-   <h3>Melting Point : {{substance.melting_point}}</h3>
-   <h3>Boiling Point : {{substance.boiling_point}}</h3>
-   <h3>Number of Isotopes : {{substance.number_of_isotopes}}</h3>
-   <h3>Who discovered : {{substance.discoverer}}</h3>
-   <h3>Year : {{substance.year}}</h3> 
-   <h3>Specific heat : {{substance.specific_heat}}</h3>
-   <h3>Number Of Shell : {{substance.number_of_shells}}</h3>
-   <h3>Number of Valence : {{substance.number_of_valence}}</h3>
+
+  
         </body>
     </head>
 </html>

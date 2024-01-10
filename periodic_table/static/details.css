@@ -1,23 +1,22 @@
 body{
     background-color: black;
+    
 }
 .element{
     color: green;
     text-align: center;
 }
-h3{
-    color: white;
-}
+ 
 
 .el_nu_sy{
     border: 1px solid white;
-    padding: 15px;
-    height: 300px;
-    width: 600px;
+    padding: 30px;
+    height: 200px;
+    width: 100%;
     text-align: center;
 }
 .atomic_number{
-    color: bisque;
+    color: whitesmoke;
    
 }
  
@@ -26,28 +25,13 @@ h3{
     color: pink;
 }
 
-.atomic_structure{
+.discription{
     
-    position: relative;
-    border: 2px solid blue;
-    height: 500px;
-    width: 600px;
-    
+    height: 400px;
+    width: 100%;
+    border: 3px solid green;
+    padding: 30px;
 }
-
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 35px;
-    width: 35px;
-    background-color:grey;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 20px;
-    display: flex;
+h3{
+    color: moccasin;
 }
-
-
- 

@@ -14,10 +14,11 @@ def table(request):
 
 def details(request):
     template = loader.get_template('details.html')
-    substance = Element.objects.filter(atomic_number = 1).values()[0]
-
+    substance = Element.objects.filter(pk = 34).values()[0]
+    electron_range = range(34)
     context = {
-        "substance":substance
+        "substance":substance,
+        "electron_range":electron_range
     }
 
     return HttpResponse(template.render(context,request))
