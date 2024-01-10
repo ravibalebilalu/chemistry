@@ -1,15 +1,25 @@
  body{
-   background-color:black;
+   background-color:gray;
  }
- .heading {
-    text-align: center;
-    color:  lightskyblue;
+ .heading_cont{
     
- }
+    color:  black;
+    height: 100px;;
+    width: 700px%;
+    border: 2px solid red;
+    text-align: center;
 
+ }
+ 
  span {
     font-weight: bold;
-    color: antiquewhite;
+    color: black
+
+ }
+ .name{
+   color:black;
+   font-weight: 1000;
+    
 
  }
 
@@ -42,7 +52,7 @@
     display: inline-block;
     width: 100px;
     height: 100px;
-    border: 1px solid white;
+    border: 1px solid black;
     text-align: center;
     margin: 1px;
     display: flex;
@@ -56,12 +66,13 @@
     display: inline-block;
     width: 100px;
     height: 100px;
-    border: 1px solid white;
+    border: 1px solid black;
     text-align: center;
     margin: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
      
 
  }
@@ -70,12 +81,13 @@
     display: inline-block;
     width: 100px;
     height: 100px;
-    border: 1px solid white;
+    border: 1px solid black;
     text-align: center;
     margin: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
 
  }
@@ -83,6 +95,7 @@
 
  .hydrogen {
     grid-column: 1;
+     
      
  }
 
@@ -118,6 +131,7 @@
 
  .actinium {
     grid-column: 2;
+    
  }
 
 
@@ -131,38 +145,55 @@
     white-space: nowrap;
  }
 
+ 
+ 
+.lithium,.beryllium,.boron,.carbon,.sodium,.magnesium,.aluminum,.silicon,.phosphorus,.sulfur,.potassium,.calcium,.scandium,.titanium,.vanadium,.chromium,.manganese,.iron,.cobalt,.nickel,.copper,.zinc,.gallium,.germanium,.arsenic,.selenium,.rubidium,.strontium,.yttrium,.zirconium,.niobium,.molybdenum,.ruthenium,.rhodium,.palladium,.silver,.cadmium,.indium,.tin,.antimony,.tellurium,.iodine,.cesium,.barium,.lanthanum,.cerium,.praseodymium,.neodymium,.samarium,.europium,.gadolinium,.terbium,.dysprosium,.holmium,.erbium,.thulium,.ytterbium,.lutetium,.hafnium,.tantalum,.wolfram,.rhenium,.osmium,.iridium,.platinum,.gold,.thallium,.lead,.bismuth,.polonium,.astatine,.francium,.radium,.actinium,.thorium,.protactinium,.uranium{
+   background-color: saddlebrown;
+   
 
- .row1{
-   color:blue;
 }
 
-.row2{
-   color:coral;
+.bromine,.mercury{
+   background-color: darkcyan;
 }
 
-.row3{
+.hydrogen,.helium,.nitrogen,.oxygen,.fluorine,.neon,.chlorine,.argon,.krypton,.xenon,.radon{
+   background-color: wheat;
+    
+   
+}
+
+.technetium,.promethium,.neptunium,.plutonium,.americium,.curium,.berkelium,.californium,.einsteinium,.fermium,.mendelevium,.nobelium,.lawrencium,.rutherfordium,.dubnium,.seaborgium,.bohrium,.hassium,.meitnerium,.darmstadtium ,.roentgenium ,.copernicium ,.nihonium,.flerovium,.moscovium,.livermorium,.tennessine,.oganesson{
+   background-color: blueviolet;
+}
+
+.color_code{
+    
+   width: 100%;
+   height: 300px;
+   border: 3px solid white;
+   margin: 5px;
+   padding: 20px;
+   background-color: black;
+   text-align: center;
+}
+
+.heading2{
    color: white;
 }
-
-.row4{
-   color: orange;
-}
-.row5{
-   color: darkgreen;
+.type1{
+   color: saddlebrown;
 }
 
-.row6{
-   color: darkgrey;
+.type2{
+   color: darkcyan;
+}
+.type3{
+   color: wheat;
 }
 
-.row7{
-   color: yellow;
+.type4{
+   color:blueviolet ;
 }
 
-.row8{
-   color: cyan;
-}
-
-.row9{
-   color: red;
-}
+ 

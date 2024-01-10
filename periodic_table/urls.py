@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path("",views.table,name = "table"),
-    path("details",views.details,name = "details")
+    path("table/details/<int:atomic_number>",views.details,name = "details")
 ]

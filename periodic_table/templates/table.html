@@ -10,7 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
-    <h1 class="heading">Periodic Table</h1>
+     
+    <div class="heading_cont">
+        <h1 class="heading">Periodic Table</h1>
+    </div>
     
       <div class="row two">
        {% for el in substance%}
@@ -18,8 +21,9 @@
         
        <div 
         class="eliment {{el.element|lower}}" >
-        <span > <h3 class="row1"> {{ el.symbol}} </h3></span>
-        <span >{{ el.element}}</span>
+    
+         <span class="name">{{ el.element}}</span>
+        <a href="{% url 'details' el.atomic_number %}"><span ><h3 class="row1"> {{ el.symbol}} </h3></span></a>
         <span>{{ el.atomic_number}}</span>
        </div>
 
@@ -28,8 +32,8 @@
        {% elif el.atomic_number > 2 and el.atomic_number < 11 %}
       
        <div class="eliment {{el.element|lower}}">
-        <span><h3 class="row2">{{ el.symbol}} </h3></span>
-        <span>{{ el.element}}</span>
+        <a href="{% url 'details' el.atomic_number %}"><span ><h3 class="row1"> {{ el.symbol}} </h3></span></a>
+        <span class="name">{{ el.element}}</span>
         <span>{{ el.atomic_number}}</span>
         </div>
 
@@ -39,8 +43,8 @@
         
 
        <div class="eliment {{el.element|lower}}"  >
-        <span><h3 class="row3">{{ el.symbol}} </h3></span>
-        <span>{{ el.element}}</span>
+        <a href="{% url 'details' el.atomic_number %}"><span ><h3 class="row1"> {{ el.symbol}} </h3></span></a>
+        <span class="name">{{ el.element}}</span>
         <span>{{ el.atomic_number}}</span>
         
        </div>
@@ -50,8 +54,8 @@
        {% elif el.atomic_number > 18 and el.atomic_number < 37 %}
 
        <div class="eliment {{el.element|lower}}">
-        <span><h3 class="row4">{{ el.symbol}} </h3></span>
-        <span>{{ el.element}}</span>
+        <a href="{% url 'details' el.atomic_number %}"><span ><h3 class="row1"> {{ el.symbol}} </h3></span></a>
+        <span class="name">{{ el.element}}</span>
         <span>{{ el.atomic_number}}</span>
         
        </div>
@@ -59,8 +63,8 @@
        {% elif el.atomic_number > 36 and el.atomic_number < 55 %}
 
        <div class="eliment {{el.element|lower}}">
-        <span><h3 class="row5">{{ el.symbol}} </h3></span>
-        <span>{{ el.element}}</span>
+        <a href="{% url 'details' el.atomic_number %}"><span ><h3 class="row1"> {{ el.symbol}} </h3></span></a>
+        <span class="name">{{ el.element}}</span>
         <span>{{ el.atomic_number}}</span>
         
        </div>
@@ -68,8 +72,8 @@
        {% elif el.atomic_number > 54  and el.atomic_number < 57 or  el.atomic_number > 71 and el.atomic_number < 87  %}
        
        <div class="eliment {{el.element|lower}}">
-        <span><h3 class="row6">{{ el.symbol}} </h3></span>
-        <span>{{ el.element}}</span>
+        <a href="{% url 'details' el.atomic_number %}"><span ><h3 class="row1"> {{ el.symbol}} </h3></span></a>
+        <span class="name">{{ el.element}}</span>
         <span>{{ el.atomic_number}}</span>
         
        </div>
@@ -78,8 +82,8 @@
        {% elif el.atomic_number > 86  and el.atomic_number < 89 or  el.atomic_number > 103 and el.atomic_number < 119 %}
        
        <div class="eliment {{el.element|lower}}">
-        <span><h3 class="row7">{{ el.symbol}} </h3></span>
-        <span>{{ el.element}}</span>
+        <a href="{% url 'details' el.atomic_number %}"><span ><h3 class="row1"> {{ el.symbol}} </h3></span></a>
+        <span class="name">{{ el.element}}</span>
         <span>{{ el.atomic_number}}</span>
         
        </div>
@@ -98,8 +102,8 @@
       {% if el.atomic_number > 56  and el.atomic_number < 72 %}
        
        <div class="bottom_eliments {{el.element|lower}}">
-        <span><h3 class="row8">{{ el.symbol}} </h3></span>
-        <span>{{ el.element}}</span>
+        <a href="{% url 'details' el.atomic_number %}"><span ><h3 class="row1"> {{ el.symbol}} </h3></span></a>
+        <span class="name">{{ el.element}}</span>
         <span>{{ el.atomic_number}}</span>
         
        </div>
@@ -115,19 +119,26 @@
 
        {% if el.atomic_number > 88  and el.atomic_number < 104 %}
         
-        <div class="bottom_eliments_last {{el.element|lower}}">
-         <span><h3 class="row9">{{ el.symbol}} </h3></span>
-         <span>{{ el.element}}</span>
-         <span>{{ el.atomic_number}}</span>
-         
-        </div>
         
- 
-    
-
+        <div class="bottom_eliments_last {{el.element|lower}}" >
+            <a href="{% url 'details' el.atomic_number %}"><span ><h3 class="row1"> {{ el.symbol}} </h3></span></a>
+            <span class="name">{{ el.element}}</span>
+         <span>{{ el.atomic_number}}</span>
+        </div>
+         
        {% endif %}
        {% endfor %}
-    </div>       
+    </div>      
     
+    <br><br>
+    <div class="color_code">
+        <h1 class="heading2">colors</h1>
+       
+        <h2 class="type1">Solid</h2>    
+        <h2 class="type2">Liquide</h2>    
+        <h2 class="type3">Gas</h2>    
+        <h2 class="type4">Artificial</h2>    
+        
+    </div>
 </body>
 </html>
